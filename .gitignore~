@@ -1,0 +1,7 @@
+*.pyc
+*.DS_Store
+env
+readme.md
+
+
+/home/www/env
