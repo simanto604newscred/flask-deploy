@@ -21,7 +21,7 @@ remote_supervisor_dir = '/etc/supervisor/conf.d'
 
 env.hosts = ['52.26.186.239']  # replace with IP address or hostname
 env.user = 'ubuntu'
-env.key_filename = '/home/mak2/Downloads/airvuz11.pem'
+env.key_filename = '~/.ssh/airvuz11.pem'
 # env.password = 'blah!'
 
 
@@ -124,10 +124,10 @@ def deploy():
     2. Restart gunicorn via supervisor
     """
     with lcd(local_app_dir):
-        local('git add -A')
-        commit_message = prompt("Commit message?")
-        local('git commit -am "{0}"'.format(commit_message))
-        local('git push production master')
+        # local('git add -A')
+        # commit_message = prompt("Commit message?")
+        # local('git commit -am "{0}"'.format(commit_message))
+        # local('git push production master')
         sudo('supervisorctl restart flask_project')
 
 
