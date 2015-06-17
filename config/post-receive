@@ -1,3 +1,4 @@
 #!/bin/sh
-export GIT_WORK_TREE=/home/www/flask_project git checkout -f
+export GIT_WORK_TREE=/home/www/flask_project
+git checkout master -f
 echo 'hello'
