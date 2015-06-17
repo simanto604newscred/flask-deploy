@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return 'Flask is running COOL!'
+    return 'Flask is running very COOL!'
 
 
 @app.route('/data')
