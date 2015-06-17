@@ -1,4 +1,4 @@
-from flask import Flask, jsonify
+from flask import Flask, jsonify, send_file
 
 app = Flask(__name__)
 
@@ -15,6 +15,13 @@ def names():
     }
     return jsonify(data)
 
+@app.route('/legacy')
+def get_file():
+    return send_file('test.csv')
+
+@app.route('/beenverified')
+def get_another_file():
+    return send_file('sample.txt')
 
 if __name__ == '__main__':
     app.run()
