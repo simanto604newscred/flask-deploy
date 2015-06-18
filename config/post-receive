@@ -1,4 +1,4 @@
 #!/bin/sh
-GIT_WORK_TREE=/home/www/flask_project
-git checkout master -f
-echo 'hello'
+GIT_WORK_TREE=/home/www/
+git checkout -f
+echo 'hello hook'
