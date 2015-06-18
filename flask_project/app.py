@@ -1,7 +1,7 @@
 from flask import Flask, jsonify, send_file
-import scraptest.Legacy
-app = Flask(__name__)
+from scraptest import Legacy
 
+app = Flask(__name__)
 
 @app.route('/')
 def index():
@@ -18,8 +18,8 @@ def names():
 @app.route('/legacy')
 def get_file():
 
-    aObject= scraptest.Legacy()
-    aObject.search()
+    Legacy().search()
+
 
     return send_file('test.csv')
 

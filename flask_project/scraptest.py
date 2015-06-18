@@ -4,7 +4,7 @@ import time
 import csv
 from bs4 import BeautifulSoup
 
-class Legacy():
+class Legacy:
 
     def search(self):
 

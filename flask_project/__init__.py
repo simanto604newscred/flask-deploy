@@ -1,0 +1,1 @@
+from .scraptest import Legacy
