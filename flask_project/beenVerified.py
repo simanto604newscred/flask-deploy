@@ -1,5 +1,6 @@
 from selenium import webdriver
 from bs4 import BeautifulSoup
+import csv
 
 def main():
     # page_url = 'https://www.beenverified.com/lp/116f02/2/search-results'
@@ -20,7 +21,9 @@ def main():
     # state_field = browser.find_element_by_name('state')
     # state_field.send_keys('FL')
     #
-    f = open('sample.txt','wb')
+    f = open('sample.csv','w')
+    a_writter = csv.writer(f)
+
     #
     # search_button.click()
     # ipdb.set_trace()
@@ -416,44 +419,54 @@ def main():
 
     import ipdb;ipdb.set_trace()
     for row in soup.findAll("tr"):
-        aDict = {'td-hash': 'result-no',
+        aDict = {'td-hash': [],
 
 
         }
         another_dict = {
         }
         flag = 0
+        alist= []
         for item in row.findAll("td"):
+            flag+=1
+            text = item.text.strip()
+            text = text.replace("\n","#")
+            alist.append(text)
 
-            text = item.text
-            if "THAT'S THE ONE" in text:
-                continue
-            elif item.attrs['class'][0] == 'td-hash' :
-                another_dict[item.attrs['class'][0]] = text.strip()
-            else:
-                for tag in item.findAll():
-                    try:
-                        another_dict[tag['class'][0]] = tag.text
-                    except KeyError:
-                        # prev = tag.find_previous_sibling().attrs['class'][0]
-                        # if prev == 'aka-list-heading' and flag==0 :
-                        #     another_dict[prev] = tag.text
-                        #     flag = 1
-                        # elif flag==1:
-                        #     another_dict['address'] = tag.text
-                        if tag.parent['class'][0] == 'aka-list':
-                            another_dict[tag.parent['class'][0]] = another_dict[tag.parent['class'][0]] +' '+ tag.text
-                        print KeyError
-                        print tag
-                        # ipdb.set_trace()
+            # if "THAT'S THE ONE" in text:
+            #     continue
+            # elif item.attrs['class'][0] == 'td-hash' :
+            #     another_dict[item.attrs['class'][0]] = text.strip()
+            # else:
+            #     for tag in item.findAll():
+            #         try:
+            #             another_dict[tag['class'][0]] = tag.text
+            #         except KeyError:
+            #             # prev = tag.find_previous_sibling().attrs['class'][0]
+            #             # if prev == 'aka-list-heading' and flag==0 :
+            #             #     another_dict[prev] = tag.text
+            #             #     flag = 1
+            #             # elif flag==1:
+            #             #     another_dict['address'] = tag.text
+            #             ipdb.set_trace()
+            #             print tag.text
+            #             # continue
+            #         else:
+            #             print 'Hello world'
+            #             # if tag.parent['class'][0] == 'aka-list':
+            #             #     another_dict[tag.parent['class'][0]] = another_dict[tag.parent['class'][0]] +' '+ tag.text
+            #             # print KeyError
+            #             # print tag
+            #             # ipdb.set_trace()
+            #
+            #
+            #
+            # print another_dict
+            #
 
-
-
-            print another_dict
-
-            f.write(text)
-            ipdb.set_trace()
-
+        a_writter.writerows([alist])
+            # ipdb.set_trace()
+        print flag
 
 
 

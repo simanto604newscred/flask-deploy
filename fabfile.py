@@ -2,7 +2,7 @@
 ### imports ###
 ###############
 
-from fabric.api import cd, env, lcd, put, prompt, local, sudo
+from fabric.api import cd, env, lcd, put, prompt, local, sudo, run
 from fabric.contrib.files import exists
 
 
@@ -19,7 +19,7 @@ remote_flask_dir = remote_app_dir + '/flask_project'
 remote_nginx_dir = '/etc/nginx/sites-enabled'
 remote_supervisor_dir = '/etc/supervisor/conf.d'
 
-env.hosts = ['52.26.186.239']  # replace with IP address or hostname
+env.hosts = ['52.10.118.53']  # replace with IP address or hostname
 env.user = 'ubuntu'
 env.key_filename = '~/.ssh/airvuz11.pem'
 # env.password = 'blah!'
@@ -48,9 +48,9 @@ def install_flask():
     3. Copy Flask files to remote host
     """
     if exists(remote_app_dir) is False:
-        sudo('mkdir ' + remote_app_dir)
+        run('mkdir ' + remote_app_dir)
     if exists(remote_flask_dir) is False:
-        sudo('mkdir ' + remote_flask_dir)
+        run('mkdir ' + remote_flask_dir)
     with lcd(local_app_dir):
         with cd(remote_app_dir):
             sudo('virtualenv env')
@@ -101,9 +101,9 @@ def configure_git():
     2. Create post-receive hook
     """
     if exists(remote_git_dir) is False:
-        sudo('mkdir ' + remote_git_dir)
+        run('mkdir ' + remote_git_dir)
         with cd(remote_git_dir):
-            sudo('mkdir flask_project.git')
+            run('mkdir flask_project.git')
             with cd('flask_project.git'):
                 sudo('git init --bare')
                 with lcd(local_config_dir):
