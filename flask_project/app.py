@@ -18,14 +18,13 @@ def names():
 @app.route('/legacy')
 def get_file():
 
-    Legacy().search()
 
 
     return send_file('test.csv')
 
 @app.route('/beenverified')
 def get_another_file():
-    return send_file('sample.txt')
+    return send_file('sample.csv')
 
 if __name__ == '__main__':
     app.run()

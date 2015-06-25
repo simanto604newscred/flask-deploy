@@ -21,7 +21,7 @@ remote_supervisor_dir = '/etc/supervisor/conf.d'
 
 env.hosts = ['52.10.118.53']  # replace with IP address or hostname
 env.user = 'ubuntu'
-env.key_filename = '~/.ssh/airvuz11.pem'
+env.key_filename = '~/.ssh/airvuz12.pem'
 # env.password = 'blah!'
 
 
