@@ -1,0 +1,231 @@
+(test)mak2@mak2-Inspiron-N4010:~/projects/flask-deploy/flask_project (master)$ python main_pilot.py
+['Phyllis Mirkin Adels  ', 'http://www.legacy.com/obituaries/herald/obituary.aspx?n=phyllis-mirkin-adels&pid=175111986']
+0
+[]
+***********One iteration finished break************
+['NANCY LUCILLE COUGHLIN APPLETON  ', 'http://www.legacy.com/obituaries/herald/obituary.aspx?n=nancy-lucille-coughlin-appleton&pid=175096508']
+0
+[]
+***********One iteration finished break************
+['Gary Neal Aronson  ', 'http://www.legacy.com/obituaries/herald/obituary.aspx?n=gary-neal-aronson&pid=175147767&fhid=8783']
+0
+[]
+***********One iteration finished break************
+['Orlando Arribas  ', 'http://www.legacy.com/obituaries/herald/obituary.aspx?n=orlando-arribas&pid=175119403']
+0
+[]
+***********One iteration finished break************
+['JEANNINE A. BISON  ', 'http://www.legacy.com/obituaries/herald/obituary.aspx?n=jeannine-a-bison&pid=175127119&fhid=5822']
+0
+6
+[]
+['1', 'Jeannine M Bisson##                  Miami, FL#                ###Also Seen As#- Jeannine B Bisson#- Jeannine Alice Bisson', '85', 'Miami, FL#Aventura, FL#North Miami Beach, FL', 'Joseph J Bisson#Lehman M Bisson#Michelle M Lehman']
+0
+***********One iteration finished break************
+['Mildred Louise Blizzard  ', 'http://www.legacy.com/obituaries/herald/obituary.aspx?n=mildred-louise-blizzard&pid=175112333&fhid=8799']
+0
+[]
+***********One iteration finished break************
+['JOSEPH PETER BLOCK  ', 'http://www.legacy.com/obituaries/herald/obituary.aspx?n=joseph-peter-block&pid=175131156']
+0
+[]
+***********One iteration finished break************
+['TALBOT CHARLES BOUDREAU Sr.  ', 'http://www.legacy.com/obituaries/herald/obituary.aspx?n=talbot-charles-boudreau&pid=175154951&fhid=16819']
+0
+[]
+***********One iteration finished break************
+['Patricia Anne Bracci  ', 'http://www.legacy.com/obituaries/herald/obituary.aspx?n=patricia-anne-bracci&pid=175138082&fhid=9113']
+0
+[]
+***********One iteration finished break************
+['Olga Cardozo  ', 'http://www.legacy.com/obituaries/herald/obituary.aspx?n=olga-cardozo&pid=175111923&fhid=8802']
+0
+[]
+***********One iteration finished break************
+['RICHARD CARRERA  ', 'http://www.legacy.com/obituaries/herald/obituary.aspx?n=richard-carrera&pid=175127571']
+0
+[]
+***********One iteration finished break************
+['Myrtle Weston Coaxum  ', 'http://www.legacy.com/obituaries/herald/obituary.aspx?n=myrtle-weston-coaxum&pid=175155307']
+0
+[]
+***********One iteration finished break************
+['LAURA LEE COOK  ', 'http://www.legacy.com/obituaries/herald/obituary.aspx?n=laura-lee-cook&pid=175112615&fhid=9166']
+0
+6
+6
+[]
+['1', 'Larry Cook##                  Tampa, FL#                ###Also Seen As#- Sb Laura Cook#- Lary L Cook#- Laura L Cook#- Laura L Lcook#- Laura L Hussain', '44', 'Tampa, FL#Avon Park, FL#Sebring, FL#Burnet, TX#Brandon, FL#Troy, AL#Zolfo Springs, FL#Wauchula, FL#Riverview, FL', 'Elaine A Cook#Jeremy Glenn Cook#Larry Glenn Cook#Mirza Afzal Hussain']
+0
+['2', 'Laura Lecoco##                  Laramie, WY#                ###Also Seen As#- L Lecocq#- Laura Ann Lecocq', '55', 'Laramie, WY#Fort Morgan, CO#Berea, KY#San Jose, CA#Bradenton, FL#San Diego, CA#El Cajon, CA#Sterling, CO#Medical Lake, WA#Cape Coral, FL#North Miami Beach, FL#Manchester, NH#Rathdrum, ID#Sarasota, FL', '']
+***********One iteration finished break************
+['Marsha Dauer  ', 'http://www.legacy.com/obituaries/herald/obituary.aspx?n=marsha-dauer&pid=175146687&fhid=9109']
+0
+[]
+***********One iteration finished break************
+['RALPH DUNN  ', 'http://www.legacy.com/obituaries/herald/obituary.aspx?n=ralph-dunn&pid=175126090']
+0
+[]
+***********One iteration finished break************
+['Kenneth Elgersma  ', 'http://www.legacy.com/obituaries/herald/obituary.aspx?n=kenneth-elgersma&pid=175112612']
+0
+[]
+***********One iteration finished break************
+['Albert Charles Ferguson  ', 'http://www.legacy.com/obituaries/herald/obituary.aspx?n=albert-charles-ferguson&pid=175120097']
+0
+[]
+***********One iteration finished break************
+['Berta Goldberg  ', 'http://www.legacy.com/obituaries/herald/obituary.aspx?n=berta-goldberg&pid=175148017&fhid=8783']
+0
+[]
+***********One iteration finished break************
+['ALICIA CEQUERELLA GOLDEN  ', 'http://www.legacy.com/obituaries/herald/obituary.aspx?n=alicia-cequerella-golden&pid=175154836']
+0
+[]
+***********One iteration finished break************
+['Robert Bruce Goldstein  ', 'http://www.legacy.com/obituaries/herald/obituary.aspx?n=robert-bruce-goldstein&pid=175154950&fhid=13749']
+0
+[]
+***********One iteration finished break************
+['Diane Victoria Granado  ', 'http://www.legacy.com/obituaries/herald/obituary.aspx?n=diane-victoria-granado&pid=175138594']
+0
+[]
+***********One iteration finished break************
+['Avinash Gupta  ', 'http://www.legacy.com/obituaries/herald/obituary.aspx?n=avinash-gupta&pid=175104380&fhid=9178']
+0
+[]
+***********One iteration finished break************
+['Minnie Halpern  ', 'http://www.legacy.com/obituaries/herald/obituary.aspx?n=minnie-halpern&pid=175138074']
+0
+[]
+***********One iteration finished break************
+['Jacqueline F. Heit  ', 'http://www.legacy.com/obituaries/herald/obituary.aspx?n=jacqueline-f-heit&pid=175126089&fhid=14660']
+0
+6
+6
+[]
+['1', 'Jacqueline Semon Dhaiti##                  Miami, FL#                ###Also Seen As#- Jacqueline Haiti', '22', 'Miami, FL', 'Joseph C Dhaiti#Louisene D Dhaiti#Katia M Lamothe#Marie C Veltz']
+1
+['2', 'Jacqueline Ann Hewitt##                  Miami, FL', '49', 'Miami, FL#Warner Robins, GA#Doraville, GA#Stone Mountain, GA#Atlanta, GA#Decatur, GA', '']
+One result written
+***********One iteration finished break************
+['Mercy Silva Hernandez (1947 - 2015)  ', 'http://www.legacy.com/obituaries/herald/obituary.aspx?n=mercy-silva-hernandez&pid=175154952']
+0
+[]
+***********One iteration finished break************
+['Gloria Nicholas Kitchens  ', 'http://www.legacy.com/obituaries/herald/obituary.aspx?n=gloria-nicholas-kitchens&pid=175146585&fhid=8773']
+0
+[]
+***********One iteration finished break************
+['ALBERT LATNER  ', 'http://www.legacy.com/obituaries/herald/obituary.aspx?n=albert-latner&pid=175120055']
+0
+[]
+***********One iteration finished break************
+['Diez Arguelles Silvio Leal  ', 'http://www.legacy.com/obituaries/herald/obituary.aspx?n=diez-arguelles-silvio-leal&pid=175105055&fhid=9125']
+0
+[]
+***********One iteration finished break************
+['Kevin Leaman  ', 'http://www.legacy.com/obituaries/herald/obituary.aspx?n=kevin-leaman&pid=175138835&fhid=5822']
+0
+[]
+***********One iteration finished break************
+['Margaret Leckich  ', 'http://www.legacy.com/obituaries/herald/obituary.aspx?n=margaret-leckich&pid=175112560&fhid=9113']
+0
+[]
+***********One iteration finished break************
+['MARIA ROSARIA MESSORE  ', 'http://www.legacy.com/obituaries/herald/obituary.aspx?n=maria-rosaria-messore&pid=175126282&fhid=9134']
+0
+[]
+***********One iteration finished break************
+['Fred Metelnikow  ', 'http://www.legacy.com/obituaries/herald/obituary.aspx?n=fred-metelnikow&pid=175104757&fhid=11470']
+0
+[]
+***********One iteration finished break************
+['Thomas Noto  ', 'http://www.legacy.com/obituaries/herald/obituary.aspx?n=thomas-noto&pid=175120150&fhid=18694']
+0
+[]
+***********One iteration finished break************
+['Rose Oroshnik  ', 'http://www.legacy.com/obituaries/herald/obituary.aspx?n=rose-oroshnik&pid=175105054']
+0
+[]
+***********One iteration finished break************
+['Norman Panter (1932 - 2015)  ', 'http://www.legacy.com/obituaries/herald/obituary.aspx?n=norman-panter&pid=175138908&fhid=8783']
+0
+[]
+***********One iteration finished break************
+['Shirley Globus Plakcy  ', 'http://www.legacy.com/obituaries/herald/obituary.aspx?n=shirley-globus-plakcy&pid=175138079']
+0
+[]
+***********One iteration finished break************
+['Nylda Calas Planas  ', 'http://www.legacy.com/obituaries/herald/obituary.aspx?n=nylda-calas-planas&pid=175138909']
+0
+[]
+***********One iteration finished break************
+['RICHARD JOSEPH POTVIN Jr.  ', 'http://www.legacy.com/obituaries/herald/obituary.aspx?n=richard-joseph-potvin&pid=175120030&fhid=11568']
+0
+[]
+***********One iteration finished break************
+['Alan M. Prince  ', 'http://www.legacy.com/obituaries/herald/obituary.aspx?n=alan-m-prince&pid=175104679&fhid=11470']
+0
+6
+6
+6
+[]
+['1', 'Alan G Prince##                  Miami, FL', '70', 'Miami, FL#New York, NY#Manhattan, NY', 'Timothy M Burns#Alan Prince']
+0
+['2', 'Alan M Prince##                  Miami, FL#                ###Also Seen As#- Allan Prince', '85', 'Miami, FL#Deerfield Beach, FL', '']
+['3', 'Alan Prince##                  Miami, FL', '', 'Miami, FL', 'Alan G Prince']
+0
+***********One iteration finished break************
+['BETTY EWTON RANSOM  ', 'http://www.legacy.com/obituaries/herald/obituary.aspx?n=betty-ewton-ransom&pid=175126739']
+0
+[]
+***********One iteration finished break************
+['STEVEN ROBERT RODNEY  ', 'http://www.legacy.com/obituaries/herald/obituary.aspx?n=steven-robert-rodney&pid=175127454&fhid=9146']
+0
+6
+[]
+['1', 'Steven Robert Reiter##                  Placentia, CA#                ###Also Seen As#- Reiter Steven Robert#- Robert S Reiter#- Steve Reiter#- S Reiter#- Steven R Reiter', '52', 'Placentia, CA#Escondido, CA#Poway, CA#Tucson, AZ', 'Lisa Ann Figueroa#Cheryl L Reiter#Francis M Reiter#Gretchen Ann Reiter#Gretchen A Reiter']
+1
+One result written
+***********One iteration finished break************
+['Dean V. Sickle  ', 'http://www.legacy.com/obituaries/herald/obituary.aspx?n=dean-v-sickle&pid=175126088&fhid=14972']
+0
+6
+[]
+['1', 'Dean Vick Sickle##                  Cutler Bay, FL#                ###Also Seen As#- Dean Vick Sickle#- V Sickle', '91', 'Cutler Bay, FL#Coral Springs, FL#Margate, FL#Homosassa, FL#Asheville, NC#Asheville N*c, NC#Palm City, FL', 'Susan Proudfoot Shepper#Dale M Sickle#Dennis V Sickle#Dorothy M Sickle#Eva J Sickle']
+0
+***********One iteration finished break************
+['JOEL SOKOLSKY  ', 'http://www.legacy.com/obituaries/herald/obituary.aspx?n=joel-sokolsky&pid=175147845&fhid=9148']
+0
+[]
+***********One iteration finished break************
+['Sara "Sarita" Stahl  ', 'http://www.legacy.com/obituaries/herald/obituary.aspx?n=sara-stahl-sarita&pid=175138076&fhid=16796']
+0
+[]
+***********One iteration finished break************
+['Daniel Stern  ', 'http://www.legacy.com/obituaries/herald/obituary.aspx?n=daniel-stern&pid=175155779&fhid=8783']
+0
+[]
+***********One iteration finished break************
+['Bette Sternfeld  ', 'http://www.legacy.com/obituaries/herald/obituary.aspx?n=bette-sternfeld&pid=175138766&fhid=9109']
+0
+[]
+***********One iteration finished break************
+['Nancy Helene Rodriguez Suarez (1940 - 2015)  ', 'http://www.legacy.com/obituaries/herald/obituary.aspx?n=nancy-helene-rodriguez-suarez&pid=175104893']
+0
+[]
+***********One iteration finished break************
+['William Harrison "Bill" Thompson  ', 'http://www.legacy.com/obituaries/herald/obituary.aspx?n=william-harrison-thompson-bill&pid=175155916']
+0
+6
+[]
+['1', 'William Harrison Thompson##                  Miami, FL#                ###Also Seen As#- W H Thompson#- William L Thompson#- William Harrison Thompson', '74', 'Miami, FL#Summerland Key, FL#Palmetto Bay, FL#Winston Salem, NC#Pompano Beach, FL', 'Delores M Okeefe#Ana Maria Rabassa#Ana R Rabassa Thompson#Kathy Jean Schlecht#Ann Maria Thompson']
+1
+One result written
+***********One iteration finished break************
+['BEATRICE YIANILOS  ', 'http://www.legacy.com/obituaries/herald/obituary.aspx?n=beatrice-yianilos&pid=175130871&fhid=8762']
+0
+[]
+***********One iteration finished break************
+(test)mak2@mak2-Inspiron-N4010:~/projects/flask-deploy/flask_project (master)$

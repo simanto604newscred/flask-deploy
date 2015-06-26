@@ -9,7 +9,6 @@ class MainPilot:
     # legacy_search.search()
     f = open('result.csv','w')
     a_writter = csv.writer(f)
-    import ipdb;ipdb.set_trace()
     been_verified = BeenVerified()
     with open('test.csv', 'rb') as csvfile:
         testreader = csv.reader(csvfile)
@@ -27,8 +26,6 @@ class MainPilot:
                     try:
                         if row_in_sample[4]:
                             score = crossmatch.extract_entities(obituary, row_in_sample[4].split('#'))
-                            import ipdb;
-                            ipdb.set_trace()
                             print score
                             if score:
                                 result_dict[index] = [score,row_in_sample]
@@ -37,13 +34,12 @@ class MainPilot:
                         continue
 
                 if bool(result_dict):
-                    ipdb.set_trace()
                     dict_key = max(result_dict.iteritems(), key=operator.itemgetter(1))[0]
                     a_writter.writerows([result_dict[dict_key][1]])
+                    print "One result written"
 
-            print 'one iteration finished break'
-            f.close()
-            break
+            print '***********One iteration finished break************'
+
 
 
 

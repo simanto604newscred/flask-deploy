@@ -40,11 +40,12 @@ class BeenVerified:
 
         f = open('sample.csv','w')
         a_writter = csv.writer(f)
+        fd = open('doc.csv','a')
+        b_writter = csv.writer(fd)
 
         soup = BeautifulSoup(soup)
 
         for row in soup.findAll("tr"):
-            ipdb.set_trace()
             flag = 0
             alist= []
             items = row.findAll("td")
@@ -58,7 +59,11 @@ class BeenVerified:
 
             print flag
             a_writter.writerows([alist])
+            alist.append(list(name))
+            print name
+            b_writter.writerows([alist])
         f.close()
+        fd.close()
 
         browser.close()
             # elif item.attrs['class'][0] == 'td-hash' :

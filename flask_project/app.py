@@ -24,7 +24,11 @@ def get_file():
 
 @app.route('/beenverified')
 def get_another_file():
-    return send_file('sample.csv')
+    return send_file('doc.csv')
+
+@app.route('/in=progress')
+def progress():
+    return 'This part is in progress....'
 
 if __name__ == '__main__':
     app.run()
