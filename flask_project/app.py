@@ -26,7 +26,7 @@ def get_file():
 def get_another_file():
     return send_file('doc.csv')
 
-@app.route('/in=progress')
+@app.route('/in-progress')
 def progress():
     return 'This part is in progress....'
 
