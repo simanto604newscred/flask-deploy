@@ -3,7 +3,7 @@ from selenium import webdriver
 import time
 import csv
 from bs4 import BeautifulSoup
-
+from crossmatch import CrossMatch
 class Legacy:
 
     def search(self):
@@ -34,14 +34,22 @@ class Legacy:
 
         contents = browser.find_elements_by_css_selector('div.obitName')
 
-
+        x_match=CrossMatch()
         f = open('test.csv','w')
         for content in contents:
             soup = content.get_attribute('innerHTML')
             soup = BeautifulSoup(soup)
             tag = soup.a
+            url = tag['href']
+            notice = x_match.match(url)
             a_writter = csv.writer(f)
-            a_writter.writerows([[content.text, tag['href']]])
+
+            try:
+                a_writter.writerows([[content.text, url, notice]])
+            except UnicodeEncodeError:
+                notice = notice.encode('utf8')
+                a_writter.writerows([[content.text, url, notice]])
+
 
         f.close()
             # content.click()

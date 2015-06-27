@@ -21,6 +21,8 @@ class BeenVerified:
             ln_field.send_keys(name.last)
         elif name.middle:
             ln_field.send_keys(' '.join([name.middle, name.last]))
+        else:
+            ln_field.send_keys(name.last)
 
 
 
@@ -59,7 +61,7 @@ class BeenVerified:
 
             print flag
             a_writter.writerows([alist])
-            alist.append(list(name))
+            alist.insert(0, name)
             print name
             b_writter.writerows([alist])
         f.close()

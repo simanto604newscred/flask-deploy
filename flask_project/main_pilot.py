@@ -5,8 +5,8 @@ from beenVerified import BeenVerified
 from crossmatch import CrossMatch
 
 class MainPilot:
-     # legacy_search = Legacy()
-    # legacy_search.search()
+    legacy_search = Legacy()
+    legacy_search.search()
     f = open('result.csv','w')
     a_writter = csv.writer(f)
     been_verified = BeenVerified()
@@ -22,7 +22,7 @@ class MainPilot:
                 for index,row_in_sample in enumerate(sample_reader):
                     print row_in_sample
                     crossmatch = CrossMatch()
-                    obituary = crossmatch.match(row[1])
+                    obituary = row[2]
                     try:
                         if row_in_sample[4]:
                             score = crossmatch.extract_entities(obituary, row_in_sample[4].split('#'))
