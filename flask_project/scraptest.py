@@ -13,7 +13,7 @@ class Legacy:
         print(page_url)
 
 
-        browser = webdriver.Firefox()
+        browser = webdriver.PhantomJS()
         browser.get(page_url)
         total_count = browser.find_element_by_class_name('InlineTotalCount')
         total_count = total_count.text.encode('utf-8')

@@ -7,15 +7,19 @@ import time
 class BeenVerified:
     def search(self,name):
         name = HumanName(name)
-        browser = webdriver.Firefox()
+        browser = webdriver.PhantomJS()
+        browser.set_window_size(1200,800)
         page_url = 'https://www.beenverified.com/lp/116f02/2/search-results'
         #
         browser.get(page_url)
         search_button = browser.find_element_by_class_name('main-btn')
         fn_field = browser.find_element_by_name('fn')
+        fn_field.clear()
         fn_field.send_keys(name.first)
         mi_field = browser.find_element_by_name('mi')
+        mi_field.clear()
         ln_field = browser.find_element_by_name('ln')
+        ln_field.clear()
         if name.middle.endswith('.'):
             mi_field.send_keys(name.middle[0])
             ln_field.send_keys(name.last)
@@ -27,13 +31,18 @@ class BeenVerified:
 
 
         city_field = browser.find_element_by_name('city')
+        city_field.clear()
         city_field.send_keys('Miami')
         age_field = browser.find_element_by_name('age')
+        age_field.clear()
         state_field = browser.find_element_by_name('state')
         state_field.send_keys('FL')
         search_button.click()
         browser.implicitly_wait(15)
         time.sleep(15)
+
+        #debug
+        browser.save_screenshot(''.join([str(name), '.png']))
 
         result_set = browser.find_element_by_id('results-table')
         soup = result_set.get_attribute('outerHTML')
@@ -48,6 +57,7 @@ class BeenVerified:
         soup = BeautifulSoup(soup)
 
         for row in soup.findAll("tr"):
+            print row
             flag = 0
             alist= []
             items = row.findAll("td")
