@@ -43,7 +43,7 @@ def get_another_file():
 def progress():
     msg = Message("Hello",
                   sender="simanto605@gmail.com",
-                  recipients=["simanto604@gmail.com","azizussalehin@gmail.com" ])
+                  recipients=["simanto604@gmail.com" ])
     msg.body = "testing"
     msg.html = "<b>testing</b>"
     with app.open_resource("test.csv") as fp:

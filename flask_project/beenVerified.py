@@ -42,7 +42,7 @@ class BeenVerified:
         time.sleep(15)
 
         #debug
-        browser.save_screenshot(''.join([str(name), '.png']))
+        #browser.save_screenshot(''.join([str(name), '.png']))
 
         result_set = browser.find_element_by_id('results-table')
         soup = result_set.get_attribute('outerHTML')
