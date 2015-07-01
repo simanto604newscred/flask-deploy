@@ -49,7 +49,7 @@ def foo():
     if get_globvar():
         set_globvar_to(False)
         main_pilot = MainPilot()
-        main_pilot.run()
+        # main_pilot.run()
         send_email()
         set_globvar_to(True)
     print "f finished"
