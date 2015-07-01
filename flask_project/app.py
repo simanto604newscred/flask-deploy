@@ -36,8 +36,8 @@ def send_email():
     msg.html = "<b>testing</b>"
     with app.open_resource("test.csv") as fp:
         msg.attach("test.csv", "text/csv", fp.read())
-    with app.open_resource("sample.csv") as fd:
-        msg.attach("sample.csv", "text/csv", fd.read())
+    with app.open_resource("doc.csv") as fd:
+        msg.attach("doc.csv", "text/csv", fd.read())
     with app.open_resource("result.csv") as fr:
         msg.attach("result.csv", "text/csv", fr.read())
     with app.app_context():
@@ -49,7 +49,7 @@ def foo():
     if get_globvar():
         set_globvar_to(False)
         main_pilot = MainPilot()
-        # main_pilot.run()
+        main_pilot.run()
         send_email()
         set_globvar_to(True)
     print "f finished"
