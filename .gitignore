@@ -4,5 +4,7 @@ env
 readme.md
 .idea
 test.csv
+*.csv
 
 /home/www/env
+ghostdriver.log
