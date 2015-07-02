@@ -59,6 +59,7 @@ def foo(email):
         send_email(email)
         set_globvar_to(True)
 
+
     app.logger.info("Foo finished\n")
 
 
@@ -77,10 +78,11 @@ def index():
                 thr.start() # will run "foo"
 
         # thr.is_alive() # will return whether foo is running currently
-
+        if not get_globvar():
+            return "Already Running previous task"
         # thr.join()
 
-        return "You'll get a mail...."
+        return "You'll get a mail in an hour"
 
 
 @app.route('/data')
