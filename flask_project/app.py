@@ -1,8 +1,11 @@
-from flask import Flask, jsonify, send_file, render_template
+from flask import Flask, jsonify, send_file, render_template, request, session
 from main_pilot import MainPilot
 from flask.ext.mail import Mail, Message
+import os, threading, time, logging
+from logging.handlers import RotatingFileHandler
+
 app = Flask(__name__)
-import os, threading, time
+app.config['SECRET_KEY'] = 'top-secret!'
 
 # Flask-Mail configuration
 app.config['MAIL_SERVER'] = 'smtp.googlemail.com'
@@ -27,13 +30,15 @@ def get_globvar():
     return flag
 
 
-def send_email():
+def send_email(email):
+
     msg = Message("Hello",
                   sender="simanto605@gmail.com",
                   recipients=["simanto604@gmail.com" ])
-    # import ipdb;ipdb.set_trace()
     msg.body = "testing"
     msg.html = "<b>testing</b>"
+    print email
+    msg.add_recipient(email)
     with app.open_resource("test.csv") as fp:
         msg.attach("test.csv", "text/csv", fp.read())
     with app.open_resource("doc.csv") as fd:
@@ -41,23 +46,41 @@ def send_email():
     with app.open_resource("result.csv") as fr:
         msg.attach("result.csv", "text/csv", fr.read())
     with app.app_context():
+        print '$$$$$Send mail now$$$$$$$$'
         mail.send(msg)
 
-def foo():
-    print "f started"
-
+def foo(email):
+    app.logger.info("f started"+ "email: "+email+"\n")
+    print email
     if get_globvar():
         set_globvar_to(False)
         main_pilot = MainPilot()
-        main_pilot.run()
-        send_email()
+        # main_pilot.run()
+        send_email(email)
         set_globvar_to(True)
-    print "f finished"
+
+    app.logger.info("Foo finished\n")
 
 
-@app.route('/')
+
+@app.route('/', methods=['GET', 'POST'])
 def index():
-    return 'Flask is Running now!'
+    if request.method == 'GET':
+        return render_template('index.html', email=session.get('email', ''))
+    if request.method == 'POST':
+        email = ''.join([request.form['email']])
+        session['email'] = email
+        print email
+        with app.test_request_context():
+            thr = threading.Thread(target=foo, args=(email,), kwargs={})
+            if not thr.is_alive():
+                thr.start() # will run "foo"
+
+        # thr.is_alive() # will return whether foo is running currently
+
+        # thr.join()
+
+        return "You'll get a mail...."
 
 
 @app.route('/data')
@@ -69,33 +92,22 @@ def names():
 
 @app.route('/legacy')
 def get_file():
-
-
-
     return send_file('test.csv')
 
 @app.route('/beenverified')
 def get_another_file():
     return send_file('doc.csv')
 
-@app.route('/mail')
-def progress():
-    thr = threading.Thread(target=foo, args=(), kwargs={})
-    # import ipdb;ipdb.set_trace()
-    if not thr.is_alive():
-        thr.start() # will run "foo"
 
-    # thr.is_alive() # will return whether foo is running currently
 
-    # thr.join()
 
-    return "You'll get a mail...."
-
-@app.route('/report')
-def create_report():
-
-    return render_template('index.html')
 
 
 if __name__ == '__main__':
+    formatter = logging.Formatter(
+        "[%(asctime)s] {%(pathname)s:%(lineno)d} %(levelname)s - %(message)s")
+    handler = RotatingFileHandler('../../foo.log', maxBytes=10000, backupCount=1)
+    handler.setLevel(logging.INFO)
+    handler.setFormatter(formatter)
+    app.logger.addHandler(handler)
     app.run(debug=True)

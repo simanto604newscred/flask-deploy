@@ -8,7 +8,7 @@ class Legacy:
 
     def search(self):
 
-        payload = {'daterange': '1', 'countryid': '1', 'stateid': '12', 'affiliateid': '150'}
+        payload = {'daterange': '7', 'countryid': '1', 'stateid': '12', 'affiliateid': '150'}
         page_url = ''.join(['http://www.legacy.com/obituaries/herald/obituary-search.aspx?',urlencode(payload)])
         print(page_url)
 

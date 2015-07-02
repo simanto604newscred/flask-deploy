@@ -5,13 +5,16 @@
 body {
     background-color: #d0e4fe;
 }
-
+#email_form{
+   
+   height: 30px;
+   width: 200px;
+   border-radius: 10px;
+   padding: 5px;
+}
 .button {
-   top: 191px;
-   left: 420px;
-   right: -520px;
-   bottom: -191px;
-   position:relative;
+
+{#   position:relative;#}
    transition: .5s ease;
    border: 5px solid #265f80;
    background: #c2e7ff;
@@ -65,7 +68,12 @@ body {
 <body>
 {#<a href='/legacy' class='button' id="button-1">Download Obituary List</a>#}
 {#<a href='/beenverified' class='button' id="button-2">Download Generated List</a>#}
-<a href='/mail' class='button' id="button-3">Generate & Email</a>
+<div style="align-self: center; width: 200px; margin: 0 auto; margin-top:200px;">
 
+<form method="POST">
+      <p>Send test email to: <input type="email" id = "email_form" name="email" value="{{ email }}"></p>
+      <input type="submit" class='button' name="submit" value="Generate & Email">
+</form>
+</div>
 </body>
 </html>
