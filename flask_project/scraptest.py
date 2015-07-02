@@ -8,12 +8,13 @@ class Legacy:
 
     def search(self):
 
-        payload = {'daterange': '7', 'countryid': '1', 'stateid': '12', 'affiliateid': '150'}
+        payload = {'daterange': '1', 'countryid': '1', 'stateid': '12', 'affiliateid': '150'}
         page_url = ''.join(['http://www.legacy.com/obituaries/herald/obituary-search.aspx?',urlencode(payload)])
         print(page_url)
 
 
         browser = webdriver.PhantomJS()
+        browser.set_window_size(1200,800)
         browser.get(page_url)
         total_count = browser.find_element_by_class_name('InlineTotalCount')
         total_count = total_count.text.encode('utf-8')

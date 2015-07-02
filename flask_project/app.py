@@ -30,7 +30,7 @@ def get_globvar():
 def send_email():
     msg = Message("Hello",
                   sender="simanto605@gmail.com",
-                  recipients=["simanto604@gmail.com", "azizussalehin@gmail.com" ])
+                  recipients=["simanto604@gmail.com" ])
     # import ipdb;ipdb.set_trace()
     msg.body = "testing"
     msg.html = "<b>testing</b>"
