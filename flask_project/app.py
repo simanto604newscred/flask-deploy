@@ -35,8 +35,8 @@ def send_email(email):
     msg = Message("Hello",
                   sender="simanto605@gmail.com",
                   recipients=["simanto604@gmail.com" ])
-    msg.body = "testing"
-    msg.html = "<b>testing</b>"
+    msg.body = "Generated Data"
+    msg.html = "<b>Here's generated data attached</b>"
     print email
     msg.add_recipient(email)
     with app.open_resource("test.csv") as fp:
