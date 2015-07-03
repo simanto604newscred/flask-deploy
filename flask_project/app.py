@@ -50,7 +50,7 @@ def send_email(email):
         mail.send(msg)
 
 def foo(email):
-    app.logger.info("f started"+ "email: "+email+"\n")
+    app.logger.info("f started "+ "email: "+email+"\n")
     print email
     if get_globvar():
         set_globvar_to(False)
