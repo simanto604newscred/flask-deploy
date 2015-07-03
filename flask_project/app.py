@@ -54,8 +54,8 @@ def foo(email):
     print email
     if get_globvar():
         set_globvar_to(False)
-        # main_pilot = MainPilot()
-        # main_pilot.run()
+        main_pilot = MainPilot()
+        main_pilot.run()
         send_email(email)
         set_globvar_to(True)
 
