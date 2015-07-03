@@ -19,9 +19,9 @@ remote_flask_dir = remote_app_dir + '/flask_project'
 remote_nginx_dir = '/etc/nginx/sites-enabled'
 remote_supervisor_dir = '/etc/supervisor/conf.d'
 
-env.hosts = ['52.10.118.53']  # replace with IP address or hostname
+env.hosts = ['52.27.151.31']#['52.10.118.53']  # replace with IP address or hostname
 env.user = 'ubuntu'
-env.key_filename = '~/.ssh/airvuz12.pem'
+env.key_filename = '~/.ssh/Airvuz25.pem'#airvuz12.pem'
 # env.password = 'blah!'
 
 
@@ -39,6 +39,7 @@ def install_requirements():
     sudo('apt-get install -y gunicorn')
     sudo('apt-get install -y supervisor')
     sudo('apt-get install -y git')
+    sudo('apt-get install build-essential python-dev')
 
 
 def install_flask():
@@ -48,9 +49,9 @@ def install_flask():
     3. Copy Flask files to remote host
     """
     if exists(remote_app_dir) is False:
-        run('mkdir ' + remote_app_dir)
+        sudo('mkdir ' + remote_app_dir)
     if exists(remote_flask_dir) is False:
-        run('mkdir ' + remote_flask_dir)
+        sudo('mkdir ' + remote_flask_dir)
     with lcd(local_app_dir):
         with cd(remote_app_dir):
             sudo('virtualenv env')
@@ -101,7 +102,7 @@ def configure_git():
     2. Create post-receive hook
     """
     if exists(remote_git_dir) is False:
-        run('mkdir ' + remote_git_dir)
+        sudo('mkdir ' + remote_git_dir)
         with cd(remote_git_dir):
             run('mkdir flask_project.git')
             with cd('flask_project.git'):
@@ -145,6 +146,8 @@ def rollback():
 def status():
     """ Is our app live? """
     sudo('supervisorctl status')
+
+
 
 
 def create():
